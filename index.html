@@ -41,10 +41,10 @@
   <p>Top 15 officers in Precinct 75 by total complaint count. The y-axis begins at 20, and only the highest-complaint officers from the highest-complaint precinct are shown.</p>
   <p><strong>Design Decisions and Rationale:</strong></p>
   <ul>
-    <li><strong>(Score −2)</strong> The y-axis starts at 20 rather than 0, which exaggerates the visual difference between bars. Officers with 25+ complaints appear far more severe than they actually are — the truncated axis makes a difference of a few complaints look dramatic, when in reality the gap between the best and worst officer shown is only about 10 complaints.</li>
-    <li><strong>(Score −2)</strong> Precinct 75 was deliberately selected because it has the highest complaint count of any precinct. Focusing on it makes individual officer complaint numbers appear alarming, when officers in most other precincts would have significantly fewer complaints and the chart would look far less extreme.</li>
-    <li><strong>(Score −1.5)</strong> Only the 15 officers with the most complaints are shown out of roughly 327 in the precinct. While this avoids a cluttered chart, it strips away the context of the full officer population and makes the complaint numbers seem much worse across the board than they truly are.</li>
-    <li><strong>(Score +1)</strong> The bars are color-graded from darker (worst) to lighter (best), drawing mild attention to the higher-complaint officers without being outright misleading. This would have been far more deceptive if contrasting colors such as red versus green had been used, or if the gradient difference had been made more drastic.</li>
+    <li><strong>(Score −2)</strong> The y-axis starts at 20 rather than 0, to make the difference between the bars greater. This emphasizes the difference between the officers, making those with 25+ complaints look more drastic, when in reality it’s not that bad.</li>
+    <li><strong>(Score −2)</strong> Precinct 75 was chosen because it has the most complaints out of any, which means the highest complained officers have up to 30 complaints, where as in other precincts most officers wouldn’t have anything near that.</li>
+    <li><strong>(Score −1.5)</strong> Only the 15 worst officers with the most complaints were chosen from the precinct. This mainly helps keep the graph from being too cluttered with 150-ish bars, but makes the number of complaints from officers seem much worse than it really is.</li>
+    <li><strong>(Score +1)</strong> The bars are color graded from worst to best, with the worst officer being a bit darker than the best. This makes the worse complaint values stand out a bit more against the others, but isn’t necessarily misleading beyond just being emphasized. I think it would’ve been misleading if I had used red for the worse against a different color, or if the difference had been more drastic.</li>
   </ul>
 
   <h2>Final Reflection</h2>
